@@ -38,19 +38,7 @@ export class ParsedAccountLoader<AccountParsers extends {}> {
     else return account;
   }
 
-  /**
-   * Loads multiple keys, promising an array of values:
-   *
-   *     var [ a, b ] = await myLoader.loadMany([ [PublicKey, 'mint'], [PublicKey, 'metadata'] ]);
-   *
-   * This is equivalent to the more verbose:
-   *
-   *     var [ a, b ] = await Promise.all([
-   *       myLoader.load(PublicKey, 'mint'),
-   *       myLoader.load(PublicKey, 'metatadat')
-   *     ]);
-   *
-   */
+
   async loadMany<
     Keys extends readonly (readonly [
       PublicKey,

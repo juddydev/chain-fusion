@@ -28,8 +28,6 @@ export function createGetConnection(config: {
     switch (value) {
       case "localnet":
         return config.clusterUrlDefaults?.localnet || "http://localhost:8899";
-      case "devnet":
-        return config.clusterUrlDefaults?.devnet || clusterApiUrl(value);
       case "testnet":
         return config.clusterUrlDefaults?.testnet || clusterApiUrl(value);
       case "mainnet-beta":
