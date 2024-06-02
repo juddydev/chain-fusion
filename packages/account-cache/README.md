@@ -34,4 +34,5 @@ const [mint, token] = await Promise.all([
   accounts.load(mintPk, "mint"),
   accounts.load(tokenPk, "token")
 ])
+
 ```

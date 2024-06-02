@@ -8,7 +8,6 @@ A collection of helpers for working with Solana
 
 Create a `getConnection` function that resolves the rpc endpoint from default cluster url mappings.
 
-`getConnection` can take a `rateLimitOpts` parameter that implements a [TokenBucket](https://github.com/jhurliman/node-rate-limiter) that will rate limit all outgoing connections. See `limiter` for more options.
 ```
 const { getConnection } = createGetConnection({
   defaultCluster: "devnet",

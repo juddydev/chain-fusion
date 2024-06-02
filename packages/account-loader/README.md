@@ -6,7 +6,6 @@ Solana Account [DataLoader](https://github.com/graphql/dataloader) for batching 
 
 ### AccountLoader
 
-Uses [DataLoader](https://github.com/graphql/dataloader) to batch getAccountInfo requests into one get getMultipleAccountsInfo request. Out of the box in-memory cache to re-use results from previous requests.
 Returns raw account data.
 
 ```
